@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__row {
+    gap: 0;
+  }
+
+  &__lang {
+    text-align: center;
+
+    &:first-child {
+      border-right: 1px solid $black;
+    }
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .main {
+    &__lang {
+
+      &:first-child {
+        border-right: none;
+        border-bottom: 1px solid $black;
+      }
+    }
+  }
+}

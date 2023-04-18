@@ -1,0 +1,18 @@
+extends layouts/default
+
+block variables
+    - const title = "tezis.digital - аналитика и разработка бизнес-решений для компаний и предпринимателей"
+    - const description = "Мы занимаемся разработкой и аналитикой в сфере IT и нейропсихологии. Веб-разработка, исслелования пользовательского опыта, геймификация, дизайн."
+    - const keywords = "разработка, дизайн, ux-research, нейропсихология, development, frontend, backend, design, gamification"
+
+block header
+    include ../blocks/modules/header/header
+
+block content
+    include ../blocks/modules/main/main
+
+block footer
+    include ../blocks/modules/footer/footer
+
+block scripts
+    script(src="js/main.js")
